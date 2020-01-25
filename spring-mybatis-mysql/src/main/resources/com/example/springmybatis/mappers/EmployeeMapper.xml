@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- クラス指定 -->
+<mapper namespace="com.example.springmybatis.mappers.EmployeeMapper">
+
+    <!-- マッピング定義 -->
+    <resultMap type="com.example.springmybatis.entities.Employee" id="result">
+        <id property="employeeId" column="id"/>
+        <result property="fullname" column="fullname"/>
+        <result property="email" column="email"/>
+        <result property="gender" column="gender"/>
+        <result property="hobbies" column="hobbies"/>
+        <result property="country" column="country"/>
+        <result property="address" column="address"/>
+    </resultMap>
+    <select id="getAllEmployees" resultMap="result">
+        select
+        id,
+        fullname,
+        email,
+        gender,
+        hobbies,
+        country,
+        address
+        from
+        employee
+    </select>
+</mapper>

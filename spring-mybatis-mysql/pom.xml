@@ -12,7 +12,7 @@
     <artifactId>springmybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springmybatis</name>
-    <description>Demo project for Spring MVC and MyBatis and MySQL Database</description>
+    <description>Demo project for Spring and MyBatis and MySQL Database</description>
 
     <properties>
         <java.version>11</java.version>
@@ -33,6 +33,13 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
